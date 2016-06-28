@@ -1,0 +1,18 @@
+TODO
+- switch from /dev/shm to $TMPDIR 
+  - (some systems have a strict upper limit on /dev/shm filesizes)
+  - (some systems may not have /dev/shm-- eg a chroot'd process-- but 
+    can be configured to use a TMPDIR)
+- test shmshare(),shmview(),shmcopy() for large shm sizes
+- time shmgive()/shmtake()
+- time shmwrite()/shmread()
+- rename shmwrite() shmput()
+- rename shmread() shmget() [clashes with posix shmget()]
+- test shmio on OSX
+- test makefile on OSX
+- test shmio on FreeBSD
+- test makefile on FreeBSD
+- add makefile help
+- add readme
+- add documentation
+
